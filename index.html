@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Praise The Lord </title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,18 +15,44 @@ body, html {
   line-height: 1.8;
 }
 
+
+
+@media (min-width:300px) and (max-width:400px)
+
+   {
+
+.w3-display-middle {
+  font-size: 20px;
+}
+
+}
+
+
+@media (min-width:450px) and (max-width:1080px)
+
+   {
+
+.w3-display-middle {
+  font-size: 40px;
+}
+
+}
+
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width:auto;
 }
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image:url('media/WhatsApp Image 2021-12-07 at 8.17.16 AM.jpeg');
   min-height: 100%;
+  min-width: 100%;
 }
 
 /* Second image (Portfolio) */
@@ -49,8 +75,10 @@ body, html {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
     min-height: 400px;
+    min-width: 100%;
   }
 }
+
 
 </style>
 </head>
@@ -82,8 +110,8 @@ body, html {
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home" image="\media\WhatsApp Image 2021-12-07 at 8.17.16 AM.jpeg">
-  <div class="w3-display-middle" style="white-space:nowrap;font-size:40px; color:teal;top:340px;background-color:white;">
-   Fr. Dr. Solomon Rodrigues
+  <div class="w3-display-middle" style="white-space:wrap;color:teal;top:340px;background-color:white;">
+   Fr. Dr. Solomon Rodrigues 
   </div>
 </div>
 
@@ -171,9 +199,11 @@ body, html {
         <iframe src = "media\ENGLISH SPEAKING BOOK.pdf" width="100%" height="300px" allowfullscreen="True" loading="lazy" name="English Speaking By Fr Solomon Rodrigues" >
         <p>English Speaking</p>
         </iframe>
+        <a href= "media\ENGLISH SPEAKING BOOK.pdf">Take Me to View the book in new window</a>
         
     </div>
     
+   
     
     
    
@@ -243,7 +273,7 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
 <script>
